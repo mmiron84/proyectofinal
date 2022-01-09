@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Fulmen</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/log.jpg" alt="Logo" style="width:300px;">
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedorf">
+            <article class="fcontacto">
+                <p>Ponganse en contacto con nostros para poder brindarle asi podemos asistirlo en la reparacion de su
+                    equipo</p>
+            </article>
+            <article class="ingreso">
+                <!--formlario de contacto  -->
+                <form class="formulario" action="#">
+                    <label for="Ingrese su nombre"><strong> Ingrese su nombre</strong></label><br>
+                    <input type="text" style="width: 300px;" placeholder="ingrese su nombre"
+                        alt="Ingrese su nombre"><br>
+                    <label for="Ingrese su email"><strong>su mail</label></strong> <br>
+                    <input type="email" style="width: 300px;" placeholder="ejemplo@ejemplo" alt="Ingrese su mail"><br>
+                    <label for="motivo contacto"><strong>motivo de contacto</strong></label><br>
+                    <textarea name="motivo contacto" style="width: 300px;" placeholder="Ingrese texto" id="" cols="30"
+                        rows="10"></textarea><br>
+                    <div> ¿Es propietario de un equipo ?
+                        <input type="checkbox" name="acepta" value="1"></div>
+                    <input type="number" placeholder="cuantos"><br>
+                    <!-- Utilice formulario con menu seleccion personalizado  -->
+                    <select name="equipos" class="custom-select">
+                        <option selected>modelo de equipo que utiliza</option>
+                        <option value="volvo">Platinum</option>
+                        <option value="fiat">Ice</option>
+                        <option value="audi">Xl</option>
+                    </select><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+            </article>
+        </section>
+    </main>
+    <footer class="text-center bg-dark footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h4>Dirección</h4>
+                    <p>
+                        Córdoba - Argentina <br />
+                        Esperanza n° 3266
+                    </p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h4>Redes sociales</h4>
+                    <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    <a target="_blank" href="#" class="btn-social btn-outline"><i
+                            class="fa fa-fw fa-google-plus"></i></a>
+                    <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                    <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                    <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                </div>
+                <div class="col-md-4 footer-col">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
