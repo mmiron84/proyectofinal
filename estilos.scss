@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap');
+
+
+$color1:orange;
+$colorletra:white;
+$font1:'Luxurious Roman', cursive;
+$font2:'Acme', sans-serif;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +28,10 @@ body {
   background-image: url(./img/img1.jpg);
   background-size: cover;
   background-position: center;
-  color: orange;
+  color: $color1;
   margin-bottom: 0;
   position: relative;
-  font-family: "Luxurious Roman", cursive;
+  font-family: $font1;
 }
 
 .jumbotron p {
@@ -37,7 +45,7 @@ body {
 }
 
 footer {
-  color: white;
+  color: $colorletra;
 }
 
 footer h3 {
@@ -60,15 +68,16 @@ footer .footer-below {
 }
 
 .n-left {
+
   height: auto;
-  background-color: orange;
-  color: white;
+  background-color: $color1;
+  color: $colorletra;
   border-radius: 30px;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
   box-shadow: 10px 5px 5px black;
   margin-top: 3rem;
-  font-family: "Acme", sans-serif;
+  font-family: $font2;
   font-size: x-large;
 }
 
@@ -77,7 +86,7 @@ footer .footer-below {
 }
 
 .n-left p {
-  color: white;
+  color: $colorletra;
   padding: 20px;
   text-align: justify;
   font-size: large;
@@ -112,7 +121,7 @@ footer .footer-below {
 .card {
   border: 5px solid black;
   border-radius: 30px;
-  background-color: orange;
+  background-color: $color1;
 }
 
 .card a {
@@ -122,8 +131,8 @@ footer .footer-below {
 
 .card h2 {
   text-align: center;
-  color: white;
-  font-family: "Acme", sans-serif;
+  color: $colorletra;
+  font-family: $font2;
 }
 
 .card img {
@@ -133,12 +142,12 @@ footer .footer-below {
 
 .card p {
   padding: 1rem 1rem 1rem 1rem;
-  font-family: "Acme", sans-serif;
+  font-family: $font2;
 }
 
 .card ul {
   margin-left: 4rem;
-  font-family: "Acme", sans-serif;
+  font-family: $font2;
 }
 
 .row {
@@ -154,7 +163,7 @@ footer .footer-below {
   width: 100%;
   height: 250px;
   border-radius: 5px;
-  border: 5px solid orange;
+  border: 5px solid $color1;
 }
 
 #galeria img:hover {
@@ -162,7 +171,7 @@ footer .footer-below {
 }
 
 #galeria h4 {
-  color: orange;
+  color: $color1;
   text-align: center;
 }
 
@@ -174,16 +183,17 @@ footer .footer-below {
   text-align: center;
   color: blanchedalmond;
   padding: 0;
-  font-family: "Luxurious Roman", cursive;
+  font-family: $font1;
 }
 
 .formulario {
   width: 22rem;
-  border: 6px solid orange;
+  border: 6px solid $color1;
   border-radius: 20px;
-  font-family: "Luxurious Roman", cursive;
+  font-family: $font1;
 }
 
 .custom-select {
   width: 300px;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
