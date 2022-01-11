@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background-image: url(./img/img1.jpg);
@@ -23,7 +17,7 @@ body {
   color: orange;
   margin-bottom: 0;
   position: relative;
-  font-family: "Luxurious Roman", cursive;
+  font-family: 'Luxurious Roman', cursive;
 }
 
 .jumbotron p {
@@ -60,6 +54,7 @@ footer .footer-below {
 }
 
 .n-left {
+
   height: auto;
   background-color: orange;
   color: white;
@@ -68,7 +63,7 @@ footer .footer-below {
   margin-bottom: 1.5%;
   box-shadow: 10px 5px 5px black;
   margin-top: 3rem;
-  font-family: "Acme", sans-serif;
+  font-family: 'Acme', sans-serif;
   font-size: x-large;
 }
 
@@ -122,8 +117,6 @@ footer .footer-below {
 
 .card h2 {
   text-align: center;
-  color: white;
-  font-family: "Acme", sans-serif;
 }
 
 .card img {
@@ -133,12 +126,10 @@ footer .footer-below {
 
 .card p {
   padding: 1rem 1rem 1rem 1rem;
-  font-family: "Acme", sans-serif;
 }
 
 .card ul {
   margin-left: 4rem;
-  font-family: "Acme", sans-serif;
 }
 
 .row {
@@ -174,16 +165,16 @@ footer .footer-below {
   text-align: center;
   color: blanchedalmond;
   padding: 0;
-  font-family: "Luxurious Roman", cursive;
+  font-family: 'Luxurious Roman', cursive;
 }
 
 .formulario {
   width: 22rem;
   border: 6px solid orange;
   border-radius: 20px;
-  font-family: "Luxurious Roman", cursive;
+  font-family: 'Luxurious Roman', cursive;
 }
 
 .custom-select {
   width: 300px;
-}/*# sourceMappingURL=estilos.css.map */
+}
