@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -210,7 +209,7 @@ footer .footer-below {
 }
 
 .agua-fondo {
-  background-image: url("./img/agua.jpg");
+  background-image: url("../img/agua.jpg");
   background-size: cover;
   background-position: center;
   margin: 10px;
@@ -218,7 +217,7 @@ footer .footer-below {
 }
 
 .depi-fondo {
-  background-image: url("./img/depi.jpg");
+  background-image: url("../img/depi.jpg");
   background-size: cover;
   background-position: center;
   margin: 10px;
@@ -226,26 +225,20 @@ footer .footer-below {
 }
 
 .lentes-fondo {
-  background-image: url("./img/lentes.jpg");
+  background-image: url("../img/lentes.jpg");
   background-size: cover;
   background-position: center;
   margin: 10px;
   text-align: center;
 }
 
-.fondosLetras,
-.depi-fondo h3,
-.lentes-fondo h3,
-.agua-fondo h3 {
+.fondosLetras, .depi-fondo h3, .lentes-fondo h3, .agua-fondo h3 {
   color: orange;
   background-color: #302a2aa6;
   font-family: letras;
 }
 
-.boton,
-.btn3,
-.btn2,
-.btn1 {
+.boton, .btn3, .btn2, .btn1 {
   background-color: #007bff;
   border-color: #00ff0d;
   border-radius: 10px;
@@ -270,6 +263,4 @@ footer .footer-below {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

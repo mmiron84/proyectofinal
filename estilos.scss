@@ -236,7 +236,7 @@ footer .footer-below {
 
 @each $imagen in agua, depi,lentes {
     .#{$imagen}-fondo{
-        background-image: url("./img/#{$imagen}.jpg");
+        background-image: url("../img/#{$imagen}.jpg");
         background-size: cover;
         background-position: center;
         margin: 10px;
