@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Etiquetas SEO -->
+    <meta name="description" content="Productos que disponemos">
+    <meta name="keyword"content="peltier, bomba de agua, zafiro, cristal luz guia, diodo, carcaza, agua, lentes, efectos">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos.css">
-    <title>Fulmen</title>
+    <title>Productos-Fulmen</title>
 </head>
 
 <body>
     <header>
+        <!-- coloco el header utilizando boostrap -->
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#">
@@ -54,55 +58,82 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h4>Bomba de Agua</h4>
-                    <a href="../pages/contacto.html">
-                        <img src="../img/bomba1.jpg" alt="bombaagua">
-                    </a>
+                    <div class="bomba-gal">
+                        <h4>Bomba de Agua</h4>
+                        <a href="../pages/contacto.html">
+                            <img src="../img/bomba1.jpg" alt="bombaagua">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h4>Peltier</h4>
-                    <a href="../pages/contacto.html">
-                        <img src="../img/peltier1.jpg" alt="peltier">
-                    </a>
+                    <div class="peltier-gal">
+                        <h4>Peltier</h4>
+                        <a href="../pages/contacto.html">
+                            <img src="../img/peltier1.jpg" alt="peltier">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <h4>Carcazas</h4>
-                    <a href="../pages/contacto.html">
-                        <img src="../img/tapas.jpg" alt="carcaza">
-                    </a>
+                    <div class="carcaza-gal">
+
+                        <a href="../pages/contacto.html">
+                            <img src="../img/tapas.jpg" alt="carcaza">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h4>Zafiro</h4>
-                    <a href="../pages/contacto.html">
-                        <img src="../img/zafiro1.jpg" alt=zafiro"">
-                    </a>
+                    <div class="zafiro-gal">
+                        <h4>Zafiro</h4>
+                        <a href="../pages/contacto.html">
+                            <img src="../img/zafiro1.jpg" alt=zafiro"">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h4>Cristal luz guia</h4>
-                    <a href="../pages/contacto.html">
-                        <img src="../img/cristal.jpg" alt="prisma">
-                    </a>
+                    <div class="prisma-gal">
+                        <h4>Cristal luz guia</h4>
+                        <a href="../pages/contacto.html">
+                            <img src="../img/cristal.jpg" alt="prisma">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h4>Diodos</h4>
-                    <a href="../pages/contacto.html">
-                        <img src="../img/diodo1.jpg" alt="diodo">
-                    </a>
+                    <div class="diodo-gal">
+                        <h4>Diodos</h4>
+                        <a href="../pages/contacto.html">
+                            <img src="../img/diodo1.jpg" alt="diodo">
+                        </a>
+                    </div>
                 </div>
-            </div>
+        </section>
+        <section>
+            <!-- Agrego eta clase que va a contener 3 clases mas con tips sobre los equipos -->
+            <section class="tips">
+                <div class="agua-fondo">
+                    <h3>la importancia de utilizar agua de buena calidad en su equipo</h3>
+                    <button type="button" class="btn1 btn-primary">mas info</button>
+                </div>
+                <div class="lentes-fondo">
+                    <h3>la importancia de utilizar lentes correctos para la operacion del equipo</h3>
+                    <button type="button" class="btn2 btn-primary">mas info</button>
+                </div>
+                <div class="depi-fondo">
+                    <h3>el efecto de la depilacion definitiva</h3>
+                    <button type="button" class="btn3 btn-primary">mas info</button>
+                </div>
+            </section>
         </section>
     </main>
     <footer class="text-center bg-dark footer-style">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 footer-col">
+                <div class="col-md-6 footer-col">
                     <h4>Dirección</h4>
-                    <p>
-                        Córdoba - Argentina <br />
-                        Esperanza n° 3266
-                    </p>
+                    <p> Córdoba - Argentina</p>
+                    <p> Esperanza n° 3266</p>
                 </div>
-                <div class="col-md-4 footer-col">
+                <div class="col-md-6 footer-col">
                     <h4>Redes sociales</h4>
                     <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                     <a target="_blank" href="#" class="btn-social btn-outline"><i
@@ -110,8 +141,6 @@
                     <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                     <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                     <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                </div>
-                <div class="col-md-4 footer-col">
                 </div>
             </div>
         </div>

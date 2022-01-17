@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,7 @@ body {
   color: orange;
   margin-bottom: 0;
   position: relative;
-  font-family: "Luxurious Roman", cursive;
+  font-family: "Luxurious Roman";
 }
 
 .jumbotron p {
@@ -145,8 +146,8 @@ footer .footer-below {
   align-items: center;
 }
 
-#galeria {
-  height: 100vh;
+#galeria.container {
+  height: 100%;
 }
 
 #galeria .col-lg-4 {
@@ -155,8 +156,8 @@ footer .footer-below {
 }
 
 #galeria img {
-  width: 100%;
   height: 250px;
+  width: 100%;
   border-radius: 5px;
   border: 5px solid orange;
 }
@@ -179,16 +180,96 @@ footer .footer-below {
   text-align: center;
   color: blanchedalmond;
   padding: 0;
-  font-family: "Luxurious Roman", cursive;
+  font-family: "Luxurious Roman";
 }
 
 .formulario {
   width: 22rem;
   border: 6px solid orange;
   border-radius: 20px;
-  font-family: "Luxurious Roman", cursive;
+  font-family: "Luxurious Roman";
 }
 
 .custom-select {
   width: 300px;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+.tips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.agua-fondo,
+.depi-fondo,
+.lentes-fondo {
+  height: 400px;
+  width: 25rem;
+  border: 2px solid blue;
+}
+
+.agua-fondo {
+  background-image: url("./img/agua.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.depi-fondo {
+  background-image: url("./img/depi.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.lentes-fondo {
+  background-image: url("./img/lentes.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.fondosLetras,
+.depi-fondo h3,
+.lentes-fondo h3,
+.agua-fondo h3 {
+  color: orange;
+  background-color: #302a2aa6;
+  font-family: letras;
+}
+
+.boton,
+.btn3,
+.btn2,
+.btn1 {
+  background-color: #007bff;
+  border-color: #00ff0d;
+  border-radius: 10px;
+}
+
+.btn1 {
+  color: orange;
+  margin-top: 17rem;
+}
+
+.btn2 {
+  color: orange;
+  margin-top: 15rem;
+}
+
+.btn3 {
+  margin-top: 19rem;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1180px) {
+  .tips {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

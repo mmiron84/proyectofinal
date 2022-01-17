@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap');
 
 
-$color1:orange;
+//declaro las variales que guardan los valores 
 $colorletra:white;
-$font1:'Luxurious Roman',
-cursive;
 $font2:'Acme',
 sans-serif;
+// declaro mi mapa con todos los estilos que necesita mi pagina y lo voy utilizando con mapget
+$estilos:(
+    colores: orange,
+    bkcolor:#302a2aa6,
+    centro: center,
+    letra: 'Luxurious Roman',
+);
 
+//genero un mixin que voy a utilizar en la parte de #galeria
+@mixin size ($width, $heigth){
+    height:$heigth;
+    width: $width;
+    
+}
 
 * {
     margin: 0;
@@ -30,10 +41,10 @@ body {
     background-image: url(./img/img1.jpg);
     background-size: cover;
     background-position: center;
-    color: $color1;
+    color: map-get($estilos , colores);
     margin-bottom: 0;
     position: relative;
-    font-family: $font1;
+    font-family: map-get($estilos,letra );
 }
 
 .jumbotron p {
@@ -71,7 +82,7 @@ footer .footer-below {
 
 .n-left {
     height: auto;
-    background-color: $color1;
+    background-color: map-get($estilos, colores);
     color: $colorletra;
     border-radius: 30px;
     margin-top: 1.5%;
@@ -122,7 +133,7 @@ footer .footer-below {
 .card {
     border: 5px solid black;
     border-radius: 30px;
-    background-color: $color1;
+    background-color:map-get($estilos, colores);
 }
 
 .card a {
@@ -152,12 +163,16 @@ footer .footer-below {
 }
 
 .row {
+    
     align-items: center;
 }
 
-#galeria {
-    height: 100vh;
+#galeria.container{
+    height: 100%;
 }
+// #galeria.container {
+//     height: 100%;
+// }
 
 #galeria .col-lg-4 {
     margin: 0 !important;
@@ -165,10 +180,9 @@ footer .footer-below {
 }
 
 #galeria img {
-    width: 100%;
-    height: 250px;
+    @include size(100%,250px);
     border-radius: 5px;
-    border: 5px solid $color1;
+    border: 5px solid map-get($estilos, colores);
 }
 
 #galeria img:hover {
@@ -176,7 +190,7 @@ footer .footer-below {
 }
 
 #galeria h4 {
-    color: $color1;
+    color: map-get($estilos, colores);
     text-align: center;
 }
 
@@ -189,16 +203,93 @@ footer .footer-below {
     text-align: center;
     color: blanchedalmond;
     padding: 0;
-    font-family: $font1;
+    font-family: map-get($estilos, letra);
 }
 
 .formulario {
     width: 22rem;
-    border: 6px solid $color1;
+    border: 6px solid map-get($estilos , colores);
     border-radius: 20px;
-    font-family: $font1;
+    font-family: map-get($estilos, letra);
 }
 
 .custom-select {
     width: 300px;
+}
+
+//Genero el contenedor que va a tener los 3 divs (lentes depi agua) declaro la clase flex para poder hacerlo responsive
+.tips{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+//declaro las 3 caracteristicas de las clases que despues voy a cargar las imagenes con @each
+.agua-fondo,
+.depi-fondo,
+.lentes-fondo{
+    height:400px;
+    width: 25rem;
+    border:2px solid blue;
+}
+
+@each $imagen in agua, depi,lentes {
+    .#{$imagen}-fondo{
+        background-image: url("./img/#{$imagen}.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+//Utilizo @extend para utilizar los estilos de la clase .fonfoLetras lo hereden los backgound de h3 tambien dentro de esa clase utilice mapget
+.fondosLetras{
+    color:map-get($estilos, colores);
+    background-color: map-get($estilos,bkcolor);
+    font-family: letras;
+
+}
+.agua-fondo h3{
+    @extend.fondosLetras;
+}
+
+.lentes-fondo h3{
+    @extend.fondosLetras;
+}
+.depi-fondo h3{
+    @extend.fondosLetras;
+}
+
+//utilizo extend para que los botones hereden las propiedades declarada en .boton
+.boton{
+    background-color: #007bff;
+    border-color: #00ff0d;
+    border-radius: 10px 
+}
+
+.btn1 {
+    @extend.boton;
+    color:map-get($estilos, colores );
+    margin-top: 17rem   
+}
+
+.btn2{
+    @extend.boton;
+    color:map-get($estilos, colores );  
+    margin-top: 15rem;
+}
+
+.btn3{
+    @extend.boton;
+    margin-top: 19rem;
+}
+
+// agrege media querie para trabajar como columna la parte de los tips
+@media only screen and (min-width:200px) and (max-width:1180px){
+    .tips{
+        flex-direction: column;
+        align-items: center;
+    }   
 }

@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Etiquetas SEO -->
+    <meta name="description" content="póngase en contacto ">
+    <meta name="keyword" content="contacto, email, modelo ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos.css">
-    <title>Fulmen</title>
+    <title>Contacto-Fulmen</title>
 </head>
 
 <body>
     <header>
+        <!-- coloco el header utilizando boostrap -->
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#">
@@ -52,26 +56,25 @@
                 <p>Ponganse en contacto con nostros para poder brindarle informacion de lo solicitado</p>
             </article>
             <article class="ingreso">
-                <!--formlario de contacto  -->
+                <!--formulario de contacto  -->
                 <form class="formulario" action="#">
-                    <label for="Ingrese su nombre"><strong> Ingrese su nombre</strong></label><br>
-                    <input type="text" style="width: 300px;" placeholder="ingrese su nombre"
-                        alt="Ingrese su nombre"><br>
-                    <label for="Ingrese su email"><strong>su mail</label></strong> <br>
-                    <input type="email" style="width: 300px;" placeholder="ejemplo@ejemplo" alt="Ingrese su mail"><br>
-                    <label for="motivo contacto"><strong>motivo de contacto</strong></label><br>
+                    <label for="Ingrese su nombre"><strong> Ingrese su nombre</strong></label>
+                    <input type="text" style="width: 300px;" placeholder="ingrese su nombre" alt="Ingrese su nombre">
+                    <label for="Ingrese su email"><strong>su mail</label></strong>
+                    <input type="email" style="width: 300px;" placeholder="ejemplo@ejemplo" alt="Ingrese su mail">
+                    <label for="motivo contacto"><strong>motivo de contacto</strong></label>
                     <textarea name="motivo contacto" style="width: 300px;" placeholder="Ingrese texto" id="" cols="30"
-                        rows="10"></textarea><br>
+                        rows="10"></textarea>
                     <div> ¿Es propietario de un equipo ?
                         <input type="checkbox" name="acepta" value="1"></div>
-                    <input type="number" placeholder="cuantos"><br>
+                    <input type="number" placeholder="cuantos">
                     <!-- Utilice formulario con menu seleccion personalizado  -->
                     <select name="equipos" class="custom-select">
                         <option selected>modelo de equipo que utiliza</option>
                         <option value="volvo">Platinum</option>
                         <option value="fiat">Ice</option>
                         <option value="audi">Xl</option>
-                    </select><br>
+                    </select>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpiar">
             </article>
@@ -80,14 +83,12 @@
     <footer class="text-center bg-dark footer-style">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 footer-col">
+                <div class="col-md-6 footer-col">
                     <h4>Dirección</h4>
-                    <p>
-                        Córdoba - Argentina <br />
-                        Esperanza n° 3266
-                    </p>
+                    <p> Córdoba - Argentina</p>
+                    <p> Esperanza n° 3266</p>
                 </div>
-                <div class="col-md-4 footer-col">
+                <div class="col-md-6 footer-col">
                     <h4>Redes sociales</h4>
                     <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                     <a target="_blank" href="#" class="btn-social btn-outline"><i
@@ -96,10 +97,7 @@
                     <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                     <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
                 </div>
-                <div class="col-md-4 footer-col">
-                </div>
             </div>
-        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
