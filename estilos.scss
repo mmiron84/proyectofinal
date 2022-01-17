@@ -234,7 +234,7 @@ footer .footer-below {
     border:2px solid blue;
 }
 
-@each $imagen in agua, depi,lentes {
+@each $imagen in agua, depi, lentes {
     .#{$imagen}-fondo{
         background-image: url("./img/#{$imagen}.jpg");
         background-size: cover;
