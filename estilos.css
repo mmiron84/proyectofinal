@@ -209,7 +209,7 @@ footer .footer-below {
 }
 
 .agua-fondo {
-  background-image: url("../img/agua.jpg");
+  background-image: url("./img/agua.jpg");
   background-size: cover;
   background-position: center;
   margin: 10px;
@@ -217,7 +217,7 @@ footer .footer-below {
 }
 
 .depi-fondo {
-  background-image: url("../img/depi.jpg");
+  background-image: url("./img/depi.jpg");
   background-size: cover;
   background-position: center;
   margin: 10px;
@@ -225,7 +225,7 @@ footer .footer-below {
 }
 
 .lentes-fondo {
-  background-image: url("../img/lentes.jpg");
+  background-image: url("./img/lentes.jpg");
   background-size: cover;
   background-position: center;
   margin: 10px;
