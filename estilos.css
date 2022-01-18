@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&family=Montserrat:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.navbar {
+  background-color: white !important;
+}
+
 #collapsibleNavbar {
   justify-content: end;
+}
+
+.nav-link {
+  color: #0a2447 !important;
+  font-family: "Luxurious Roman";
+}
+
+.navbar-toggler {
+  background-color: #0a2447;
 }
 
 .jumbotron {
@@ -24,20 +38,26 @@ body {
   margin-bottom: 0;
   position: relative;
   font-family: "Luxurious Roman";
+  line-height: 1.5rem;
 }
 
 .jumbotron p {
-  font-size: x-large;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* footer */
 .footer-style {
   padding-top: 0;
-  background-color: #2C3E50;
+  background-color: white;
+}
+
+.text-center p {
+  margin-bottom: 0;
 }
 
 footer {
-  color: white;
+  color: #0a2447;
 }
 
 footer h3 {

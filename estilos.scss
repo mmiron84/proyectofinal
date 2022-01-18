@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Luxurious+Roman&family=Montserrat:wght@500&display=swap');
 
 //declaro las variales que guardan los valores 
 $colorletra:white;
 $font2:'Acme',
 sans-serif;
+$font1:#0a2447;
+$font3:'Montserrat', sans-serif;
 // declaro mi mapa con todos los estilos que necesita mi pagina y lo voy utilizando con mapget
 $estilos:(
     colores: orange,
@@ -16,8 +18,7 @@ $estilos:(
 //genero un mixin que voy a utilizar en la parte de #galeria
 @mixin size ($width, $heigth){
     height:$heigth;
-    width: $width;
-    
+    width: $width;  
 }
 
 * {
@@ -32,10 +33,27 @@ body {
     background-repeat: no-repeat;
 }
 
+
+//--------------------------------------HEADER-----------------------------------
+.navbar{
+    background-color: white !important;
+}
+
+// Cambio la ubicacion del texto en el header
 #collapsibleNavbar {
     justify-content: end;
 }
 
+//cambio color de las letras en el header y la fuente de la  letra
+.nav-link{
+    color: $font1!important;
+    font-family: map-get($estilos, letra);
+}
+.navbar-toggler{
+    background-color:$font1;
+}
+
+//pagina principal con el fondo de pantalla 
 .jumbotron {
     min-height: 100vh;
     background-image: url(./img/img1.jpg);
@@ -45,20 +63,28 @@ body {
     margin-bottom: 0;
     position: relative;
     font-family: map-get($estilos,letra );
+    line-height: 1.5rem;
 }
 
 .jumbotron p {
-    font-size: x-large;
+    font-size: 4rem;
+    // margin-bottom: 0;
+    font-family:$font3 ;
 }
 
 /* footer */
+
 .footer-style {
     padding-top: 0;
-    background-color: #2C3E50;
+    background-color: white;
+}
+
+.text-center p{
+    margin-bottom:0;
 }
 
 footer {
-    color: $colorletra;
+    color: #0a2447;
 }
 
 footer h3 {
