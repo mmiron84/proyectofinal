@@ -53,6 +53,7 @@ main{
 //cambio color de las letras en el header y la fuente de la  letra
 .nav-link{
     color: $azul!important;
+    font-weight: bold;
     font-family: map-get($estilos, letra);
 }
 .navbar-toggler{
@@ -121,15 +122,17 @@ main{
 .n-rigth {
     min-height: 1200px;
     margin-top: 0;
-    padding: 1rem 1rem 1rem 1rem;
-}
-
-.n-rigth img {
-    min-height: 1200px;
-    width: 100%;
+    // padding: 1rem 1rem 1rem 1rem;
+    border: 20px solid $azul;
+    background-image: url(./img/mantenimiento.jpg);
+    background-size: cover;
     border-radius: 30px;
     box-shadow: 10px 5px 5px black;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 1,5%;
 }
+
 
 // -------------------------------- Seccion Productos--------------------
 #galeria.container{
@@ -167,7 +170,26 @@ main{
     color: map-get($estilos, gris);
     text-align: center;
 }
+
 // -----------------------------Formulario Contacto------------------------------
+.container-fluid{
+    padding: 0;;
+}
+.baner{
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+    background-image: url(./img/baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baner p{
+    color: $azul;
+    font-family: $font2;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
 .contenedorf {
     min-height: 1200px;
     display: flex;
@@ -183,8 +205,10 @@ main{
 .formulario {
     width: 22rem;
     border: 6px solid map-get($estilos , colores);
+    padding: 20px 5px 20px 5px;
     border-radius: 20px;
     font-family: map-get($estilos, letra);
+
 }
 
 .ingreso{
@@ -194,6 +218,21 @@ main{
 .custom-select {
     width: 300px;
 }
+
+.mapa{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
 
 // -------------------------------------------Servicios--------------------
 .mantenimiento,
@@ -246,5 +285,7 @@ main{
     text-align:center;
     z-index:999;
 }
+
+
 
 
