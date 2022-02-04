@@ -92,6 +92,7 @@ main {
   border: 20px solid #0a2447;
   background-image: url(./img/mantenimiento.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: 30px;
   box-shadow: 10px 5px 5px black;
   margin-top: 1.5%;
