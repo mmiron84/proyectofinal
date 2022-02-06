@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -20,7 +21,9 @@ main {
 }
 
 #collapsibleNavbar {
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .nav-link {
@@ -70,7 +73,8 @@ main {
   border-radius: 30px;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
-  box-shadow: 10px 5px 5px black;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
   font-family: "Acme", sans-serif;
   font-size: x-large;
 }
@@ -94,10 +98,11 @@ main {
   background-size: cover;
   background-position: center;
   border-radius: 30px;
-  box-shadow: 10px 5px 5px black;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
-  margin-left: 1, 5%;
+  margin-left: 1,5%;
 }
 
 #galeria.container {
@@ -130,7 +135,8 @@ main {
 }
 
 #galeria img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #galeria h4 {
@@ -157,14 +163,22 @@ main {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+  margin-left: 25%;
 }
 
 .contenedorf {
   min-height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
   color: blanchedalmond;
   padding: 0;
@@ -220,27 +234,33 @@ main {
 }
 
 .container .mantenimiento:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container .ReparacionLaser:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container .MedicionAgua:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container .medicionTemp:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container .asesoramiento:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container .calibracion:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btn-whatsapp {
@@ -255,4 +275,5 @@ main {
   line-height: 80px;
   text-align: center;
   z-index: 999;
-}/*# sourceMappingURL=estilos.css.map */
+}
+/*# sourceMappingURL=estilos.css.map */
